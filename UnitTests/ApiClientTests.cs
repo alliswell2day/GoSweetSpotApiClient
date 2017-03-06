@@ -8,7 +8,7 @@ namespace UnitTests
     [TestClass]
     public class ApiClientTests
     {
-        string api_token = "572014901603BD9CC53918988264B788D83CDA9BFA9E48F508";
+        string api_token = "ACDACDACDACDACDACDACDACDACD";
 
         [TestMethod]
         public void CustomerOrders_Get_ShouldReturnNothing()
@@ -56,6 +56,15 @@ namespace UnitTests
                         {
                              Code = "ABC",
                              Description = "Wall Paint",
+                             Currency = "NZD",
+                             UnitKg= 1,
+                             Units = 1,
+                             UnitValue = 10
+                        },
+                        new GoSweetSpotApiClientLib.Models.CustomerOrder.Product
+                        {
+                             Code = "DCF",
+                             Description = "Wall Art",
                              Currency = "NZD",
                              UnitKg= 1,
                              Units = 1,
